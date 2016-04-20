@@ -21,9 +21,7 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
 
-    [super pushViewController:viewController animated:animated];
-    
-//    if (self.childViewControllers.count > 1) {
+    if (self.childViewControllers.count > 1) {
         // 设置返回按钮
         
         UIButton *backBtn = [[UIButton alloc] init];
@@ -33,9 +31,13 @@
         [backBtn sizeToFit];
         backBtn.backgroundColor = [UIColor redColor];
     
-    // 注意设置是设置push进来的viewController的leftBar 不是self
+        // 注意设置是设置push进来的viewController的leftBar 不是self
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-//    }
+    }
+    
+    // 放后面的目的：push进来的控制器，可以修改leftBarButtonItem，覆盖默认设置
+    [super pushViewController:viewController animated:animated];
+    
 }
 
 
