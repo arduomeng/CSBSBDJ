@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03789CC71CC7C4E500AB9591 /* BDJsssViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03789CC61CC7C4E400AB9591 /* BDJsssViewController.m */; };
 		0B9956C01CC7239B00039168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B9956BF1CC7239B00039168 /* Assets.xcassets */; };
 		0B9956CE1CC7239B00039168 /* CSBSBDJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9956CD1CC7239B00039168 /* CSBSBDJTests.m */; };
 		0B9956D91CC7239B00039168 /* CSBSBDJUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9956D81CC7239B00039168 /* CSBSBDJUITests.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03789CC51CC7C4E400AB9591 /* BDJsssViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJsssViewController.h; sourceTree = "<group>"; };
+		03789CC61CC7C4E400AB9591 /* BDJsssViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJsssViewController.m; sourceTree = "<group>"; };
 		0B9956B01CC7239A00039168 /* CSBSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSBSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9956BF1CC7239B00039168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B9956C41CC7239B00039168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				0B9956B31CC7239B00039168 /* Supporting Files */,
 				0BAE81791CC785B5002642DA /* BDJtempViewController.h */,
 				0BAE817A1CC785B5002642DA /* BDJtempViewController.m */,
+				03789CC51CC7C4E400AB9591 /* BDJsssViewController.h */,
+				03789CC61CC7C4E400AB9591 /* BDJsssViewController.m */,
 			);
 			path = CSBSBDJ;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				0B99572E1CC7520700039168 /* BDJTabBar.m in Sources */,
 				0B99571F1CC751D300039168 /* BDJTabBarViewController.m in Sources */,
 				0B9957131CC7519400039168 /* BDJFollowViewController.m in Sources */,
+				03789CC71CC7C4E500AB9591 /* BDJsssViewController.m in Sources */,
 				0B9957191CC7519E00039168 /* BDJHomeViewController.m in Sources */,
 				0BAE81781CC782D3002642DA /* BDJNavigationController.m in Sources */,
 				0BAE81741CC76392002642DA /* UIBarButtonItem+Extension.m in Sources */,

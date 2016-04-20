@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BDJTabBarViewController.h"
+#import "BDJNavigationController.h"
 @interface AppDelegate ()
 
 @end
@@ -53,14 +54,15 @@
     [item setTitleTextAttributes:attr forState:UIControlStateNormal];
     [item setTitleTextAttributes:attr2 forState:UIControlStateSelected];
     
-    // NavigationBar
-    UINavigationBar *navBar = [UINavigationBar appearance];
-    
+    // NavigationBar appearanceWhenContainedIn方法含义，设置BDJNavigationController的通用设置.其他的导航栏不会影响
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:[BDJNavigationController class], nil];
+
     NSMutableDictionary *attrNav = [[NSMutableDictionary alloc] init];
     attrNav[NSFontAttributeName] = [UIFont systemFontOfSize:20];
     attrNav[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     
     navBar.titleTextAttributes = attrNav;
+    [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 
 @end
